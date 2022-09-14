@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,c=1,i,j,k;
+	cout<< " enter the number of rows needed :";
+	cin>>n;
+	for(i=0;i<=n;i++)
+	{
+		for(j=n;j>=i;j--)
+		cout<<" ";
+		for(k=0;k<=i;k++)
+		{
+			if(k==0 || i==0)
+		    	c=1;
+			else
+		       c=c*(i-k+1)/k;
+			cout<<c<<" ";	 
+		}
+		cout<<endl;
+	}
+	return 0;
+
+}
